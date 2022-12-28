@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="container mt-5">
+        <div class="calculadora">
+            <div class="display">
+                <span id="hnumber"></span>
+                <span id="dplay">0</span>
+            </div>
+            <div class="teclado">
+                <table>
+                    <tr>
+                        <td class="td-size">
+                            <button class="btn btn-secondary" value="7">7</button>
+                        </td>
+                        <td class="td-size">
+                            <button class="btn btn-secondary" value="8">8</button>
+                        </td>
+                        <td class="td-size">
+                            <button class="btn btn-secondary" value="9">9</button>
+                        </td>
+                        <td class="td-size">
+                            <button class="btn btn-dark">/</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-size">
+                            <button class="btn btn-secondary" value="4">4</button>
+                        </td>
+                        <td class="td-size">
+                            <button class="btn btn-secondary" value="5">5</button>
+                        </td>
+                        <td class="td-size">
+                            <button class="btn btn-secondary" value="6">6</button>
+                        </td>
+                        <td class="td-size">
+                            <button class="btn btn-dark">*</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-size">
+                            <button class="btn btn-secondary" value="1">1</button>
+                        </td>
+                        <td class="td-size">
+                            <button class="btn btn-secondary" value="2">2</button>
+                        </td>
+                        <td class="td-size">
+                            <button class="btn btn-secondary" value="3">3</button>
+                        </td>
+                        <td class="td-size">
+                            <button class="btn btn-dark">-</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-size">
+                            <button class="btn btn-dark" onclick="Deletar()"><-</button>
+                        </td>
+                        <td class="td-size">
+                            <button class="btn btn-secondary" value="0">0</button>
+                        </td>
+                        <td class="td-size">
+                            <button class="btn btn-secondary">,</button>
+                        </td>
+                        <td class="td-size">
+                            <button class="btn btn-dark">+</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button class="btn btn-danger" onclick="Limpar()">Limpar</button>
+                        </td>  
+                        <td colspan="2">
+                            <button class="btn btn-primary">=</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <div class="copyright-box">
+        <span class="copyright">© Copyright <strong>Saulo Junio - 2022</strong></span>
+    </div>
+           
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
